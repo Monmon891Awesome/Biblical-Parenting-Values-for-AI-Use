@@ -5,6 +5,13 @@
 **Date:** 2026-07-07
 **Depends on:** the research library ([`../research/`](../research/)), value system ([`../ai-values/`](../ai-values/)), and Claude skill ([`../skills/biblical-parenting-companion/`](../skills/biblical-parenting-companion/)) in this repository.
 
+> **This is the product/content PRD** (vision, personas, the 16 chapters, metrics, mobile/Java export path). It is now part of a full PRD set — read alongside:
+> - [`web-app-prd.md`](web-app-prd.md) — complete technical/functional spec (architecture, data model, API, auth, security, privacy, a11y, CI, admin overview)
+> - [`admin-console-prd.md`](admin-console-prd.md) — the admin console (database, dashboards, content studio, safety, Companion ops)
+> - [`user-experience-prd.md`](user-experience-prd.md) — screen-by-screen user flows and microcopy
+> - [`design-system.md`](design-system.md) — "Firstlight" visual/interaction system (warm, Apple-style, not churchy)
+> - [`PERSONALITY.md`](PERSONALITY.md) — product voice & persona · [`../AGENTS.md`](../AGENTS.md) — build guide
+
 ---
 
 ## 1. Vision

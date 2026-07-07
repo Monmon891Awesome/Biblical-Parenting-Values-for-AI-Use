@@ -31,7 +31,8 @@ AI must never occupy the place of God, His Word, His Spirit, His church, or the 
 | [`research/discipleship/`](research/discipleship/) | Growing closer to Jesus Christ as an individual and as a family |
 | [`ai-values/`](ai-values/) | The distilled value system for AI: `VALUES.md` (human-readable), `values.json` (machine-readable), `guardrails.md` (anti-dependence design) |
 | [`skills/biblical-parenting-companion/`](skills/biblical-parenting-companion/) | The Claude skill (`SKILL.md`) plus test scenarios, sample run transcripts, and an evaluation rubric |
-| [`prd/`](prd/) | Product Requirements Document for the **Biblical Parenting Guide** web app (with an Android/iOS export path) |
+| [`prd/`](prd/) | Full PRD set for the **Firstlight** Biblical Parenting Guide app — product/content, web-app technical spec, admin console, UX flows, design system, and personality (Android/iOS export path included) |
+| [`AGENTS.md`](AGENTS.md) | Build guide for Opus/agents implementing the app — stack, conventions, and the guardrails to uphold |
 | [`docs/translations-and-copyright.md`](docs/translations-and-copyright.md) | Translation choices and copyright notes (KJV public domain; NASB1995 usage) |
 
 ## How the pieces fit together
@@ -63,8 +64,9 @@ research/  ──feeds──►  ai-values/  ──governs──►  skills/bibl
 - ✅ Research library (first edition)
 - ✅ AI value system (`ai-values/`)
 - ✅ Claude skill with test scenarios and sample runs
-- ✅ PRD for the Biblical Parenting Guide app
-- ⬜ App implementation (next phase — see PRD)
+- ✅ Full PRD set for the Firstlight app (product, web-app tech, admin console, UX, design system, personality)
+- ✅ Build guide for implementers (`AGENTS.md`)
+- ⬜ App implementation (next phase — build with Opus from `prd/` + `AGENTS.md`)
 
 ---
 
