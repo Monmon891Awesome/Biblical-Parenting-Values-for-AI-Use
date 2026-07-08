@@ -1,0 +1,90 @@
+{
+  "id": "ch-01",
+  "slug": "01-unless-the-lord-builds",
+  "part": 1,
+  "order": 1,
+  "title": "Unless the LORD Builds",
+  "subtitle": "Parenting begins with worship, not technique",
+  "estMinutes": 8,
+  "coverMotif": "morning-window",
+  "sections": [
+    {
+      "kind": "read",
+      "order": 1,
+      "heading": "Before the first tip",
+      "body": "Welcome. Before a single parenting technique — before schedules, discipline, or milestones — there is one sentence you can build your whole home on.\n\nYou are tired, maybe a little afraid, and there is a lot of advice shouting at you. So let's start somewhere quiet and load-bearing: **you are not the builder of this house. God is.** That isn't a demotion — it's the most freeing news a new parent can hear. Your job is real and holy, but the weight of the outcome was never meant to sit on your shoulders.\n\nRead the next section slowly. It's short on purpose."
+    },
+    {
+      "kind": "word",
+      "order": 2,
+      "heading": "The Word",
+      "body": "Two songs that pilgrim families sang on the road — the Bible's theology of the home in miniature.",
+      "scripture": [
+        {
+          "ref": "Psalm 127:1",
+          "translations": [
+            { "translation": "KJV", "text": "Except the LORD build the house, they labour in vain that build it: except the LORD keep the city, the watchman waketh but in vain." },
+            { "translation": "NASB1995", "text": "Unless the LORD builds the house, They labor in vain who build it; Unless the LORD guards the city, The watchman keeps awake in vain." }
+          ]
+        },
+        {
+          "ref": "Psalm 127:3",
+          "translations": [
+            { "translation": "KJV", "text": "Lo, children are an heritage of the LORD: and the fruit of the womb is his reward." },
+            { "translation": "NASB1995", "text": "Behold, children are a gift of the LORD, The fruit of the womb is a reward." }
+          ]
+        }
+      ],
+      "wordStudies": [
+        { "lemma": "בָּנָה / בָּנִים (banah / banim)", "language": "hebrew", "strongs": "H1129 / H1121", "gloss": "to build / children", "payoff": "Hebrew hears 'build' echo in 'children' — children are how God builds a house, and unless He builds, the building is in vain." }
+      ]
+    },
+    {
+      "kind": "read",
+      "order": 3,
+      "heading": "What this means for you tonight",
+      "body": "Notice what the psalm calls *vain*: not resting, but **anxious over-work** — rising early, staying up late, eating \"the bread of painful labors\" (v.2). The verse isn't against diligence; the whole book of Proverbs is for it. It's against the exhausting belief that it all depends on you.\n\nAnd notice what your child is called: a **gift** and a **reward** — grace words. Not a project to optimize. Not a report card on your worth. A gift is received with open hands and thanks.\n\nSo the first move in Biblical parenting isn't a method. It's worship: handing the house back to the Builder, and receiving your child as His gift."
+    },
+    {
+      "kind": "reflect",
+      "order": 4,
+      "heading": "Sit with this",
+      "body": "No right answers. Just honesty before God.",
+      "questions": [
+        "Where has my diligence quietly turned into 'labor in vain' — effort without prayer?",
+        "Do I treat my child more like a gift to receive, or a project to get right?",
+        "What would change tonight if I truly believed God is the one building this home?"
+      ]
+    },
+    {
+      "kind": "practice",
+      "order": 5,
+      "heading": "This week",
+      "practice": "Tonight, before you sleep, hold your child (or your hand on the bump) and say out loud: \"Lord, this is Your house to build, and this is Your gift to me. I trust You with them.\" That sentence, said honestly, is the foundation everything else in this guide is built on."
+    },
+    {
+      "kind": "together",
+      "order": 6,
+      "heading": "Together",
+      "body": "For your spouse, or your small group / Dgroup — a good conversation this week:",
+      "questions": [
+        "In what area of parenting do we most feel like it 'all depends on us'? What would it look like to hand that to God together?",
+        "How can we help each other rest — actually rest — this week (Psalm 127:2)?"
+      ]
+    },
+    {
+      "kind": "pray",
+      "order": 7,
+      "heading": "Pray",
+      "prayer": "Father, Builder of this house — I put down the bread of anxious toil. I can't save, shape, or secure this child by my effort, and I was never meant to. They are Your gift and Your arrows; I receive them with open hands and entrust them to You. Build our home. And tonight, give Your beloved sleep. In Jesus' name, amen.",
+      "body": "Now close this, and go rest — He's the one keeping watch (Psalm 121:4). Go, and may the Lord bless your house."
+    }
+  ],
+  "sources": [
+    { "ref": "Psalms 127-128 study", "path": "research/scripture-studies/psalms-127-128-children-a-heritage.md" },
+    { "ref": "Hebrew word studies (banah/banim)", "path": "research/word-studies/hebrew-word-studies.md" },
+    { "ref": "Biblical parenting principles (principle 10)", "path": "research/parenting/biblical-parenting-principles.md" },
+    { "ref": "Reformed/Baptist foundations (God saves; parents are means)", "path": "research/theology/reformed-baptist-foundations.md" },
+    { "ref": "Parental wellbeing (rest, anxiety)", "path": "research/parenting/parental-wellbeing.md" }
+  ]
+}

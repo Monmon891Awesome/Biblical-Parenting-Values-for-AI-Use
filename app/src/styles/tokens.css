@@ -1,0 +1,71 @@
+/* Firstlight design tokens — the single source of color/space/type/motion.
+   Canonical values from prd/design-system.md §2-4. Never hardcode a hex outside this file. */
+
+:root {
+  /* Type */
+  --font-scripture: "Newsreader", "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+
+  /* Space scale */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-6: 24px; --s-8: 32px; --s-12: 48px; --s-16: 64px; --s-24: 96px;
+
+  /* Radius */
+  --r-sm: 10px; --r-md: 16px; --r-lg: 24px; --r-pill: 999px;
+
+  /* Elevation (warm, soft, low) */
+  --shadow-1: 0 1px 2px rgba(46,42,38,.04), 0 2px 8px rgba(46,42,38,.06);
+  --shadow-2: 0 4px 16px rgba(46,42,38,.08), 0 12px 32px rgba(46,42,38,.06);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 240ms;
+}
+
+/* Light — "Morning" (default) */
+:root, :root[data-theme="light"] {
+  --canvas: #FAF6EF;
+  --surface: #FFFDFA;
+  --surface-sunk: #F2ECE1;
+  --ink: #2E2A26;
+  --ink-muted: #7A7268;
+  --ink-faint: #A79E92;
+  --hairline: #E7DFD3;
+  --sage: #5E6B4F;
+  --sage-soft: #EAEDE3;
+  --sage-deep: #46503B;
+  --clay: #C67B52;
+  --clay-soft: #F6E7DC;
+  --dawn: #E6B45C;
+  --peace: #6E8B74;
+  --care: #B4573F;
+}
+
+/* Dark — "Evening" */
+:root[data-theme="dark"] {
+  --canvas: #1E1B18;
+  --surface: #26221E;
+  --surface-sunk: #17140F;
+  --ink: #EDE7DE;
+  --ink-muted: #A79E92;
+  --ink-faint: #7A7268;
+  --hairline: #362F28;
+  --sage: #9BAA83;
+  --sage-soft: #2C3326;
+  --sage-deep: #B7C49F;
+  --clay: #DB9569;
+  --clay-soft: #3A2C21;
+  --dawn: #E6B45C;
+  --peace: #8FB097;
+  --care: #D98268;
+}
+
+/* Follow the OS when the user hasn't explicitly chosen (design-system §2) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --canvas: #1E1B18; --surface: #26221E; --surface-sunk: #17140F;
+    --ink: #EDE7DE; --ink-muted: #A79E92; --ink-faint: #7A7268; --hairline: #362F28;
+    --sage: #9BAA83; --sage-soft: #2C3326; --sage-deep: #B7C49F;
+    --clay: #DB9569; --clay-soft: #3A2C21; --dawn: #E6B45C; --peace: #8FB097; --care: #D98268;
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://firstlight.app/schema/chapter.schema.json",
+  "title": "Firstlight Chapter",
+  "description": "A single chapter of the Biblical Parenting Guide, authored as data. Compiled into the app's versioned content bundle.",
+  "type": "object",
+  "required": ["id", "slug", "part", "order", "title", "estMinutes", "sections", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "description": "Stable unique id, e.g. 'ch-01'" },
+    "slug": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$", "description": "URL slug, e.g. '01-unless-the-lord-builds'" },
+    "part": { "type": "integer", "minimum": 1, "maximum": 4, "description": "1=Foundations, 2=The Blueprint, 3=The Parents, 4=Sent Ones" },
+    "order": { "type": "integer", "minimum": 1, "description": "Order within the whole book" },
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "estMinutes": { "type": "integer", "minimum": 1, "maximum": 30 },
+    "coverMotif": { "type": "string", "description": "Natural/organic motif keyword for the calm cover (e.g. 'morning-window', 'olive-branch'). No religious cliches." },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "sources": {
+      "type": "array",
+      "description": "Provenance: every teaching claim traces to a research file.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ref", "path"],
+        "additionalProperties": false,
+        "properties": {
+          "ref": { "type": "string", "description": "Short label" },
+          "path": { "type": "string", "description": "Repo-relative path into research/ or docs/" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "section": {
+      "type": "object",
+      "required": ["kind", "order"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["read", "word", "reflect", "practice", "together", "pray"] },
+        "order": { "type": "integer", "minimum": 1 },
+        "heading": { "type": "string" },
+        "body": { "type": "string", "description": "Markdown body. Kept short and warm per PERSONALITY.md." },
+        "scripture": {
+          "type": "array",
+          "description": "Parallel Scripture blocks rendered in the serif signature style.",
+          "items": { "$ref": "#/$defs/scripture" }
+        },
+        "wordStudies": {
+          "type": "array",
+          "description": "Lemmas linking into research/word-studies/.",
+          "items": {
+            "type": "object",
+            "required": ["lemma", "language"],
+            "additionalProperties": false,
+            "properties": {
+              "lemma": { "type": "string" },
+              "language": { "enum": ["hebrew", "greek"] },
+              "strongs": { "type": "string" },
+              "gloss": { "type": "string" },
+              "payoff": { "type": "string", "description": "One-line parenting payoff" }
+            }
+          }
+        },
+        "questions": {
+          "type": "array",
+          "description": "Heart questions (reflect section).",
+          "items": { "type": "string" }
+        },
+        "practice": { "type": "string", "description": "One small obedience (practice section)." },
+        "prayer": { "type": "string", "description": "A written prayer to make one's own (pray section)." }
+      }
+    },
+    "scripture": {
+      "type": "object",
+      "required": ["ref", "translations"],
+      "additionalProperties": false,
+      "properties": {
+        "ref": { "type": "string", "description": "e.g. 'Psalm 127:1'" },
+        "translations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["translation", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "translation": { "enum": ["KJV", "NASB1995"] },
+              "text": { "type": "string", "description": "Verbatim text; verified against licensed source in CI." }
+            }
+          }
+        }
+      }
+    }
+  }
+}

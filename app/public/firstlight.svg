@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Firstlight">
+  <rect width="512" height="512" rx="112" fill="#FAF6EF"/>
+  <!-- horizon -->
+  <line x1="96" y1="336" x2="416" y2="336" stroke="#5E6B4F" stroke-width="14" stroke-linecap="round"/>
+  <!-- rising sun (firstlight / new mercies at dawn) -->
+  <path d="M176 336a80 80 0 0 1 160 0" fill="none" stroke="#E6B45C" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="256" cy="336" r="44" fill="#E6B45C"/>
+  <!-- gentle rays -->
+  <g stroke="#C67B52" stroke-width="12" stroke-linecap="round">
+    <line x1="256" y1="196" x2="256" y2="164"/>
+    <line x1="352" y1="236" x2="374" y2="214"/>
+    <line x1="160" y1="236" x2="138" y2="214"/>
+  </g>
+</svg>

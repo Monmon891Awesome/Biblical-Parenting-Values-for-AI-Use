@@ -1,0 +1,54 @@
+/* Global base — calm, warm, generous. Implements design-system.md principles. */
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  background: var(--canvas);
+  color: var(--ink);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+h1, h2, h3 { line-height: 1.2; font-weight: 600; margin: 0 0 var(--s-3); }
+p { margin: 0 0 var(--s-4); }
+
+/* Focus — always visible, warm */
+:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; border-radius: var(--r-sm); }
+
+button { font-family: inherit; cursor: pointer; }
+
+/* App shell */
+.app { max-width: 720px; margin: 0 auto; min-height: 100%;
+  padding: var(--s-6) var(--s-6) var(--s-24); }
+
+/* Reading typography — the Word and chapters get room to breathe */
+.reading { font-size: 1.125rem; line-height: 1.7; max-width: 66ch; }
+.reading p { margin-bottom: var(--s-6); }
+
+.display { font-family: var(--font-scripture); font-size: 2.25rem;
+  line-height: 1.15; font-weight: 600; letter-spacing: -0.01em; }
+.subtitle { color: var(--ink-muted); font-size: 1.05rem; margin-top: calc(-1 * var(--s-2)); }
+.overline { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 600; }
+.muted { color: var(--ink-muted); }
+
+/* Gentle entrance — light arriving. Honors reduced motion. */
+.rise { animation: rise var(--dur) var(--ease) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* Answered-prayer / chapter-complete: a single dawn bloom, never confetti */
+.bloom { animation: bloom 1200ms var(--ease) both; }
+@keyframes bloom {
+  0% { box-shadow: 0 0 0 0 rgba(230,180,92,0); }
+  40% { box-shadow: 0 0 0 8px rgba(230,180,92,.25); }
+  100% { box-shadow: 0 0 0 0 rgba(230,180,92,0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
