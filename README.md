@@ -32,7 +32,10 @@ AI must never occupy the place of God, His Word, His Spirit, His church, or the 
 | [`ai-values/`](ai-values/) | The distilled value system for AI: `VALUES.md` (human-readable), `values.json` (machine-readable), `guardrails.md` (anti-dependence design) |
 | [`skills/biblical-parenting-companion/`](skills/biblical-parenting-companion/) | The Claude skill (`SKILL.md`) plus test scenarios, sample run transcripts, and an evaluation rubric |
 | [`prd/`](prd/) | Full PRD set for the **Firstlight** Biblical Parenting Guide app — product/content, web-app technical spec, admin console, UX flows, design system, and personality (Android/iOS export path included) |
-| [`AGENTS.md`](AGENTS.md) | Build guide for Opus/agents implementing the app — stack, conventions, and the guardrails to uphold |
+| [`HANDOFF.md`](HANDOFF.md) | **Start here to build** — the prioritized build backlog with acceptance criteria, CI gates, open decisions, and a paste-ready kickoff prompt |
+| [`AGENTS.md`](AGENTS.md) | Build guide for the build agent implementing the app — stack, conventions, and the guardrails to uphold |
+| [`app/`](app/) | Running Firstlight PWA starter (Vite + React + TS): design tokens, ScriptureBlock, three screens, Chapter 1 |
+| [`content/`](content/) | The app's chapters as data (schema + Chapter 1) — the repo is the CMS source |
 | [`docs/translations-and-copyright.md`](docs/translations-and-copyright.md) | Translation choices and copyright notes (KJV public domain; NASB1995 usage) |
 
 ## How the pieces fit together
